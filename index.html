@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="body">
+        <div class="header">
+            <h1 class="header_text">Rock Paper Scissor</h1>
+        </div>
+
+        <div class="buttons">
+            <button class="rock" onclick="checkWinner(this)"><i class="fa-regular fa-hand-back-fist"></i></button>
+            <button class="paper" onclick="checkWinner(this)"><i class="fa-regular fa-hand"></i></button>
+            <button class="scissor" onclick="checkWinner(this)"><i class="fa-regular fa-hand-scissors"></i></button>
+        </div>
+
+        <div class="score">
+            <div class="center user">
+                <div class="score1 user_score"></div>
+                <div class="gmtxt user_text">User</div>
+            </div>
+
+            <div class="center comp">
+                <div class="score1 comp_score"></div>
+                <div class="gmtxt comp_text">Computer</div>
+            </div>
+        </div>
+
+        <div class="result">Select One</div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

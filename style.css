@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: grid;
+    place-items: center;
+}
+
+body, .body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+    background: rgb(9,24,42);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button{
+    border-radius: 50%;
+    margin: 20px;
+    border: 2px solid transparent;
+}
+
+.buttons button:hover{
+    border: 5px solid black;
+}
+
+.fa-regular{
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.rock{
+    background: rgb(237,119,152);
+}
+
+.paper{
+    background: rgb(136, 136, 228);
+}
+
+.scissor{
+    background: rgb(186,130,214);
+}
+
+.score{
+    width: 20%;
+    height: 20%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.score .user, .score .comp{
+    height: 100%;
+    width: 50%;
+}
+
+.user{
+    float: right;
+}
+
+.score1{
+    font-size: 60px;
+}
+
+.gmtxt{
+    font-size: 25px;
+}
+
+.result{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid gray;
+    background: rgb(40,52,68);
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+}
